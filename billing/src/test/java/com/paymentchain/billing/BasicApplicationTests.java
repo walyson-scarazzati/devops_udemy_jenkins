@@ -11,7 +11,6 @@ import com.paymentchain.billing.respository.InvoiceRepository;
 import java.util.Base64;
 import java.util.Optional;
 
-import org.junit.Ignore;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.extension.ExtendWith;
 import org.mockito.Mockito;
@@ -72,7 +71,7 @@ public class BasicApplicationTests {
 	    /**
 	     * Test call of create method, on weblayer.
 	     */
-	    //@Test
+	    @Test
 	    public void testCreate() throws Exception {
 	        Base64.Encoder encoder = Base64.getEncoder();
 	        String encoding = encoder.encodeToString((USER + ":" + PASSWORD).getBytes());
@@ -89,7 +88,7 @@ public class BasicApplicationTests {
 	    /**
 	     * Test call of create method, on weblayer.
 	     */
-	    //@Test
+	    @Test
 	    public void testFindById() throws Exception {
 	        Base64.Encoder encoder = Base64.getEncoder();
 	        String encoding = encoder.encodeToString((USER + ":" + PASSWORD).getBytes());
