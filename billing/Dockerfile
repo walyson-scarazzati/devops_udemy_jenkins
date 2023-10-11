@@ -1,4 +1,4 @@
-FROM openjdk:8-jdk-alpine
+FROM openjdk:17-oracle
 RUN addgroup -S devopsc && adduser -S javams -G devopsc
 USER javams:devopsc
 ENV JAVA_OPTS=""
